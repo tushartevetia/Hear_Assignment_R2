@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+    />
+    <title>Student Portal</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Section-1 -->
+      <header class="header-container">
+        <img
+          src="https://media.istockphoto.com/photos/university-in-autumn-picture-id173598452?k=20&m=173598452&s=612x612&w=0&h=49b4CwEsyt_9zJGVeJDiYOMIYLiuy55yNlOMoj5lDq4="
+          alt="College Image"
+        />
+        <div class="header">
+          <div class="top-header">
+            <i class="fas fa-bars" id="menubar"></i>
+            <i class="fas fa-user-graduate" id="userlogin"></i>
+          </div>
+          <div class="mid-header">
+            <div class="logo"><img src="img/img1.png" alt="Logo" /></div>
+            <div>Find Every College, Exam And Course At One Place</div>
+            <div class="search-bar">
+              <i class="fas fa-search"></i>
+              <input type="text" placeholder="Search..." />
+            </div>
+          </div>
+          <div class="bottom-header">
+            <div>Shiv Nadar University, Noida</div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Section-2 -->
+      <section id="side-items" class="item-categories">
+        <div class="card-items"></div>
+      </section>
+
+      <!-- Section-3 -->
+      <section class="all-college">
+        <div class="sub-header">
+          <div>
+            <h2>Explore your future</h2>
+            <p>Select for college or exam</p>
+          </div>
+          <i class="fas fa-graduation-cap fa-2x"></i>
+        </div>
+
+        <div class="btn">
+          <button class="btn active" value="colleges" id="btn-college">
+            Colleges
+          </button>
+          <button class="btn" value="exams" id="btn-exam">Exams</button>
+        </div>
+
+        <div id="clg-items" class="college-items">
+          <div class="card-items"></div>
+        </div>
+      </section>
+
+      <!-- Section-4 -->
+      <section id="hero-colleges">
+        <div class="sub-header">
+          <div>
+            <h2>Top featured colleges</h2>
+            <p>Top colleges cherry picked for you</p>
+          </div>
+          <i class="fas fa-university fa-2x"></i>
+        </div>
+
+        <div class="top-colleges">
+          <div class="college-container"></div>
+        </div>
+      </section>
+
+      <!-- SideBar -->
+      <div id="sidemenu" class="sidenav">
+        <a href="javascript:void(0)" id="close-menu" class="closebtn"
+          >&times;</a
+        >
+        <div class="user">
+          <img src="img/user.webp" alt="" />
+          <p>Hi, Guest!</p>
+        </div>
+        <ul>
+          <li><i class="fas fa-home"></i><a href="#"> Home</a></li>
+          <li><i class="fas fa-building"></i><a href="#">Colleges</a></li>
+          <li><i class="fas fa-file"></i><a href="#">Exams</a></li>
+          <li><i class="fas fa-comment"></i><a href="#">Write A Review</a></li>
+          <li><i class="fas fa-book"></i><a href="#">Courses</a></li>
+          <li><i class="fas fa-flag"></i><a href="#">Cutoff</a></li>
+          <li>
+            <i class="fas fa-graduation-cap"></i><a href="#">Admission 2021</a>
+          </li>
+          <li><i class="fas fa-newspaper"></i><a href="#">News</a></li>
+          <li><i class="fas fa-comment"></i><a href="#">Reviews</a></li>
+          <li><i class="fas fa-ticket-alt"></i><a href="#">Top Coupons</a></li>
+          <li><i class="fas fa-user"></i><a href="#">Login</a></li>
+        </ul>
+      </div>
+
+      <!-- Login/Signup -->
+      <div class="login" id="user-cred">
+        <a href="javascript:void(0)" id="closeoverlay" class="closebtn"
+          >&times;</a
+        >
+        <div>
+          <img class="login-logo" src="img/img_logo.png" alt="" />
+          <p>Log in or Sign up</p>
+          <div class="login-link">
+            <a href="#" id="facebook"
+              ><i class="fab fa-facebook fa-1.2x"></i> Continue with Facebook</a
+            >
+            <a href="#" id="google"
+              ><i class="fab fa-google"></i> Continue with Google</a
+            >
+          </div>
+          <p>Or, use your email address</p>
+        </div>
+        <div class="login-btn">
+          <button>Login</button>
+          <button>SignUp</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
